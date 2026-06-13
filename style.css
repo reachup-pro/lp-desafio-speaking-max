@@ -645,3 +645,62 @@ html.js .reveal.is-in{ opacity: 1; transform: none; }
   .offer-card{ padding: 1.6rem 1.2rem; }
   .final .btn--primary{ width: 100%; justify-content: center; }
 }
+
+/* ============================================================
+   FAIXA DE URGÊNCIA (TEMPO LIMITADO)
+   ============================================================ */
+.alert-bar{
+  background: #f5333f; color: #fff; text-align: center;
+  font-family: var(--font-body); font-weight: 500; font-size: .9rem; letter-spacing: .02em;
+  padding: .6rem 1rem; display: flex; align-items: center; justify-content: center; gap: .5rem;
+}
+.alert-bar strong{ font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.alert-bar__pulse{ width: 9px; height: 9px; border-radius: 50%; background: #fff; flex: 0 0 auto; animation: pulse-white 1.8s ease-out infinite; }
+@keyframes pulse-white{ 0%{ box-shadow: 0 0 0 0 rgba(255,255,255,.6); } 70%{ box-shadow: 0 0 0 8px rgba(255,255,255,0); } 100%{ box-shadow: 0 0 0 0 rgba(255,255,255,0); } }
+
+/* ============================================================
+   PROMESSA NA OFERTA
+   ============================================================ */
+.offer__promise{
+  display: inline-block;
+  font-family: var(--font-display); font-style: italic; font-weight: 700;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem); color: #fff;
+  background: rgba(252,81,133,.16); border: 1px solid rgba(252,81,133,.5);
+  border-radius: 100px; padding: .6rem 1.5rem; margin: 0 auto 1.8rem;
+}
+.offer__promise em{ color: var(--coral); font-style: italic; }
+
+/* ============================================================
+   DESTAQUE — CONVERSAÇÃO AO VIVO
+   ============================================================ */
+.live{
+  position: relative; color: var(--cream);
+  background:
+    radial-gradient(70% 110% at 15% 0%, rgba(252,81,133,.20), transparent 55%),
+    radial-gradient(60% 90% at 100% 100%, rgba(255,128,68,.12), transparent 55%),
+    linear-gradient(180deg, var(--dark), var(--dark-2));
+  border-radius: 40px 40px 0 0; margin-top: -10px;
+  padding: var(--sec-pad) 0;
+}
+.live__inner{ max-width: var(--maxw); margin: 0 auto; padding-inline: clamp(1.1rem,4vw,2.2rem); display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem,5vw,4rem); align-items: center; }
+.live__text .eyebrow{ display: inline-flex; }
+.live__text h2{ font-size: clamp(1.7rem,3.8vw,2.8rem); color: #fff; margin: .7rem 0 1.1rem; }
+.live__text h2 em{ color: var(--coral); font-style: italic; }
+.live__text p{ color: rgba(253,246,236,.82); font-size: clamp(1.02rem,1.4vw,1.16rem); line-height: 1.6; margin-bottom: 1rem; max-width: 54ch; }
+.live__grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+.live-tile{ aspect-ratio: 4/3; border-radius: 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); display: grid; place-items: center; }
+.live-tile svg{ width: 34px; height: 34px; fill: none; stroke: rgba(253,246,236,.45); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.live-tile--you{ background: linear-gradient(160deg, #ff6a99, var(--coral)); color: #fff; font-family: var(--font-impact); text-transform: uppercase; letter-spacing: .08em; font-size: 1.1rem; border-color: transparent; }
+.live-tile--on{ display: flex; align-items: center; justify-content: center; gap: .4rem; color: #fff; font-weight: 600; font-size: .85rem; background: rgba(252,81,133,.18); border-color: rgba(252,81,133,.5); }
+.live-tile__dot{ width: 8px; height: 8px; border-radius: 50%; background: var(--coral); animation: pulse 1.8s ease-out infinite; }
+
+@media (max-width: 900px){
+  .live__inner{ grid-template-columns: 1fr; gap: 2rem; }
+  .live__grid{ max-width: 360px; }
+}
+
+@media (max-width: 560px){
+  .alert-bar{ font-size: .82rem; padding: .5rem .8rem; }
+  .alert-bar__extra{ display: none; }
+  .offer__promise{ font-size: 1.1rem; padding: .55rem 1.1rem; }
+}

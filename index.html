@@ -10,9 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Droid+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css?v=3">
+  <link rel="stylesheet" href="/style.css?v=4">
 </head>
 <body>
+
+  <div class="alert-bar" role="note">
+    <span class="alert-bar__pulse" aria-hidden="true"></span>
+    Oferta por <strong>tempo limitado</strong> · 1º lote R$47<span class="alert-bar__extra"> · turma começa 6 de julho</span>
+  </div>
 
   <!-- ===== TOPO ===== -->
   <header class="topbar">
@@ -38,9 +43,9 @@
         </h1>
 
         <p class="hero__sub">
-          Em 4 semanas o jogo vira: você vai apresentar ao vivo em inglês, com
-          correção do Matheus, num grupo pequeno onde todo mundo está aprendendo
-          igual você. Sem livro, sem prova. Você só vai falar.
+          Em 4 semanas o jogo vira: você vai falar inglês ao vivo, em aulas de
+          conversação em grupo, com correção do Teacher Matheus, com gente que
+          está aprendendo igual você. Sem livro, sem prova. Você só vai falar.
         </p>
 
         <div class="cta-row">
@@ -56,7 +61,7 @@
 
         <ul class="trust" aria-label="O que está incluído">
           <li>4 semanas</li>
-          <li>Apresentações ao vivo</li>
+          <li>Aulas de conversação ao vivo</li>
           <li>Grupo no WhatsApp</li>
         </ul>
       </div>
@@ -200,8 +205,8 @@
                 <span class="how-step__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0012 0M12 17v4"/></svg></span>
                 <span class="pill pill--live"><span class="pill__dot"></span> Ao vivo</span>
               </div>
-              <h3>Semana 3: Sua primeira apresentação ao vivo</h3>
-              <p>Chegou a hora de falar. A apresentação é no Google Meet, em salas pequenas de até 5 pessoas. Você escolhe o formato que combina com o seu momento: só apresentar, apresentar com perguntas no final, ou uma apresentação mais aberta com discussão. Quem está inseguro começa pelo formato mais leve. Ninguém te joga no fundo da piscina.</p>
+              <h3>Semana 3: Sua primeira aula de conversação em grupo</h3>
+              <p>Chegou a hora de falar. O encontro é ao vivo no Google Meet, em salas pequenas de até 5 pessoas. Você escolhe como participar: do jeito mais tranquilo (só falando sobre o seu tema) até a conversa mais aberta, com perguntas e discussão. Quem está inseguro começa leve. Ninguém te joga no fundo da piscina.</p>
             </div>
           </li>
           <li class="how-step reveal">
@@ -211,8 +216,8 @@
                 <span class="how-step__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0012 0M12 17v4M17 6l2 2 3-3"/></svg></span>
                 <span class="pill pill--live"><span class="pill__dot"></span> Ao vivo</span>
               </div>
-              <h3>Semana 4: Sua segunda apresentação</h3>
-              <p>Mesma dinâmica, agora com o segundo tema. A diferença você vai sentir na pele: a frase que travava na semana 1 já sai bem mais solta. Você termina o desafio tendo feito o que mais evitava, falar inglês na frente de outras pessoas, duas vezes.</p>
+              <h3>Semana 4: Sua segunda aula de conversação em grupo</h3>
+              <p>Mesma dinâmica, agora com o segundo tema. A diferença você vai sentir na pele: a frase que travava na semana 1 já sai bem mais solta. Você termina o desafio tendo feito o que mais evitava, falar inglês ao vivo com outras pessoas, duas vezes.</p>
             </div>
           </li>
         </ol>
@@ -221,8 +226,29 @@
           <span class="how-whats__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/><path d="M9 10c0 3 2 5 5 5"/></svg></span>
           <div>
             <h3>Do começo ao fim: Grupo no WhatsApp com Level Tag</h3>
-            <p>Durante as 4 semanas você fica num grupo onde manda no mínimo uma dúvida por semana. Quem responde é o Matheus ou um colega com Level Tag igual ou maior que a sua (a tag sai do seu Raio X). É prática acontecendo todo dia, não só nos encontros ao vivo.</p>
+            <p>Durante as 4 semanas você fica num grupo onde manda no mínimo uma dúvida por semana. Quem responde é o Teacher Matheus ou um colega com Level Tag igual ou maior que a sua (a tag sai do seu Raio X). É prática acontecendo todo dia, não só nos encontros ao vivo.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESTAQUE — Conversação ao vivo (pedido do cliente) ===== -->
+    <section class="live" aria-labelledby="live-title">
+      <div class="live__inner">
+        <div class="live__text">
+          <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__dot"></span> 100% conversação</p>
+          <h2 id="live-title" class="reveal">A conversação não é um detalhe. É o <em>centro</em> do desafio.</h2>
+          <p class="reveal">Mesmo começando agora, você fala ao vivo nas aulas de conversação em grupo. Pratica, erra, ajusta e percebe que falar inglês é mais possível do que parecia.</p>
+          <p class="reveal">É no Google Meet, em salas de até 5 pessoas. Todo mundo no mesmo barco, com o Teacher Matheus corrigindo na hora.</p>
+        </div>
+
+        <div class="live__grid reveal" aria-hidden="true">
+          <span class="live-tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.4"/><path d="M5.5 19a6.5 6.5 0 0113 0"/></svg></span>
+          <span class="live-tile live-tile--on"><span class="live-tile__dot"></span> ao vivo</span>
+          <span class="live-tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.4"/><path d="M5.5 19a6.5 6.5 0 0113 0"/></svg></span>
+          <span class="live-tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.4"/><path d="M5.5 19a6.5 6.5 0 0113 0"/></svg></span>
+          <span class="live-tile live-tile--you">você</span>
+          <span class="live-tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.4"/><path d="M5.5 19a6.5 6.5 0 0113 0"/></svg></span>
         </div>
       </div>
     </section>
@@ -242,26 +268,26 @@
 
           <article class="bento__cell bento__cell--coral reveal">
             <span class="bento__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0012 0M12 17v4"/></svg></span>
-            <h3>2 apresentações ao vivo</h3>
+            <h3>2 aulas de conversação ao vivo</h3>
             <p>No Google Meet, em grupos de até 5 pessoas.</p>
           </article>
 
           <article class="bento__cell reveal">
             <span class="bento__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16z"/></svg></span>
-            <h3>Correção do Matheus</h3>
+            <h3>Correção do Teacher Matheus</h3>
             <p>No seu vídeo de apresentação e ao longo do desafio.</p>
           </article>
 
           <article class="bento__cell reveal">
             <span class="bento__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h5"/></svg></span>
-            <h3>Formato à sua escolha</h3>
-            <p>Do mais leve ao mais avançado, pra você evoluir no seu ritmo.</p>
+            <h3>Você escolhe o ritmo</h3>
+            <p>Começa do jeito mais leve e vai soltando a língua em conversas mais abertas conforme ganha confiança. Sem pressão.</p>
           </article>
 
           <article class="bento__cell reveal">
             <span class="bento__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg></span>
             <h3>Grupo no WhatsApp</h3>
-            <p>Com o sistema de Level Tag, onde a prática continua todos os dias.</p>
+            <p>Durante as 4 semanas, com o sistema de Level Tag, a prática continua todos os dias.</p>
           </article>
 
           <article class="bento__cell bento__cell--full reveal">
@@ -289,12 +315,12 @@
         <div class="author__text">
           <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__dot"></span> Quem vai te corrigir</p>
           <h2 id="author-title" class="reveal">Quem vai te <em>corrigir</em> nesse desafio</h2>
-          <p class="reveal">Matheus Renno Leite, fundador da Max Idiomas. São mais de 15 anos ensinando idiomas e um tempo morando nos Estados Unidos, entre Texas e Califórnia, onde aprendeu na prática como o inglês funciona no trabalho e na conversa do dia a dia.</p>
+          <p class="reveal">Matheus Renno Leite, o Teacher Matheus, fundador da Max Idiomas. São mais de 15 anos ensinando idiomas e um tempo morando nos Estados Unidos, entre Texas e Califórnia, onde aprendeu na prática como o inglês funciona no trabalho e na conversa do dia a dia.</p>
           <p class="reveal">Se você já viu os vídeos dele no TikTok, sabe como é: ele explica as coisas de um jeito que faz sentido, sem aquele papo de cursinho. No desafio é a mesma coisa, só que olhando pro seu inglês especificamente, corrigindo o que você fala e mostrando o caminho pra soltar a língua.</p>
           <ul class="stats reveal">
             <li><span class="stats__num" data-count="15" data-prefix="+">+0</span><span class="stats__label">anos ensinando idiomas</span></li>
-            <li><span class="stats__num stats__num--text">EUA</span><span class="stats__label">morou no Texas e Califórnia</span></li>
-            <li><span class="stats__num stats__num--text">0</span><span class="stats__label">livros e provas no método</span></li>
+            <li><span class="stats__num stats__num--text">Morou</span><span class="stats__label">nos EUA · Texas e Califórnia</span></li>
+            <li><span class="stats__num stats__num--text">100%</span><span class="stats__label">foco em conversação, sem livro nem prova</span></li>
           </ul>
         </div>
       </div>
@@ -341,8 +367,9 @@
       <div class="offer__inner">
         <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__dot"></span> Investimento</p>
         <h2 id="offer-title" class="reveal">Quanto custa entrar</h2>
-        <p class="offer__sub reveal">Um mês de curso de inglês comum sai por R$150 a R$400 e quase nunca te coloca pra falar. O desafio inteiro, com apresentação ao vivo e correção, está no primeiro lote por R$47.</p>
-        <p class="offer__context reveal">As vagas são limitadas porque as apresentações acontecem em salas de até 5 pessoas, e isso tem um limite real de quantas pessoas a gente consegue acompanhar de perto. Por isso funciona em lotes. Quando as vagas do primeiro lote acabam, o preço sobe:</p>
+        <p class="offer__sub reveal">Um mês de curso de inglês comum sai por R$150 a R$400 e quase nunca te coloca pra falar. O desafio inteiro, com aulas de conversação ao vivo e correção, está no primeiro lote por R$47.</p>
+        <p class="offer__promise reveal">Saia da sua primeira aula de conversação <em>já falando inglês</em>.</p>
+        <p class="offer__context reveal">As vagas são limitadas porque as aulas de conversação acontecem em salas de até 5 pessoas, e isso tem um limite real de quantas pessoas a gente consegue acompanhar de perto. Por isso funciona em lotes. Quando as vagas do primeiro lote acabam, o preço sobe:</p>
 
         <div class="offer-card reveal">
           <span class="offer-card__badge">1º lote</span>
@@ -354,8 +381,8 @@
           </ul>
           <ul class="offer-card__inc">
             <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Raio X de nível + aulas gravadas</li>
-            <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> 2 apresentações ao vivo em grupo pequeno</li>
-            <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Correção e feedback do Matheus</li>
+            <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> 2 aulas de conversação ao vivo em grupo pequeno</li>
+            <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Correção e feedback do Teacher Matheus</li>
             <li><span class="who-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Grupo no WhatsApp com Level Tag</li>
           </ul>
           <p class="offer-card__deadline">A turma começa dia 6 de julho. Entrando agora, você garante o menor valor e a sua vaga na sala.</p>
@@ -399,11 +426,11 @@
               Meu inglês é meio básico. Vou conseguir acompanhar?
               <span class="faq-ic" aria-hidden="true"></span>
             </button>
-            <div class="faq-a"><div class="faq-a__inner"><p>O Raio X da semana 1 mostra exatamente o seu nível e te coloca no ponto certo. E na hora de apresentar, você escolhe o formato mais leve, sem perguntas e mais curto. Tem gente começando junto com você. Ninguém precisa chegar pronto.</p></div></div>
+            <div class="faq-a"><div class="faq-a__inner"><p>O Raio X da semana 1 mostra exatamente o seu nível e te coloca no ponto certo. E na hora de falar ao vivo, você escolhe o jeito mais leve, mais curto e tranquilo. Tem gente começando junto com você. Ninguém precisa chegar pronto.</p></div></div>
           </div>
           <div class="faq-item reveal">
             <button class="faq-q" type="button" aria-expanded="false">
-              Tenho vergonha de falar. E se eu travar na apresentação?
+              Tenho vergonha de falar. E se eu travar na hora de falar ao vivo?
               <span class="faq-ic" aria-hidden="true"></span>
             </button>
             <div class="faq-a"><div class="faq-a__inner"><p>Travar faz parte, é por isso que você está aqui. As salas têm no máximo 5 pessoas, todo mundo no mesmo barco, sem plateia gigante te julgando. É treino, não prova. A vergonha diminui na prática, e o desafio inteiro foi montado pra isso acontecer num lugar seguro.</p></div></div>
@@ -443,7 +470,7 @@
     <!-- ===== SEÇÃO 11 — CTA Final · Type Hero (dark) ===== -->
     <section class="final" aria-labelledby="final-title">
       <div class="container final__inner">
-        <h2 id="final-title" class="reveal">Daqui 4 semanas você pode estar <em>apresentando em inglês</em>. <span class="final__muted">Ou exatamente onde está hoje.</span></h2>
+        <h2 id="final-title" class="reveal">Daqui 4 semanas você pode estar <em>conversando em inglês</em>. <span class="final__muted">Ou exatamente onde está hoje.</span></h2>
         <p class="final__sub reveal">O que separa esses dois cenários é você começar a falar. É disso que o desafio se trata.</p>
         <p class="final__text reveal">A turma começa dia 6 de julho, as vagas são limitadas e o primeiro lote está R$47. Quando ele acabar, o próximo entra por R$67. Sua vaga (e o menor preço) estão aqui agora.</p>
         <a class="btn btn--primary btn--breathe reveal" href="https://chk.eduzz.com/60E2D818W3">
