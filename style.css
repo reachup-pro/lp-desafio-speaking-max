@@ -744,5 +744,6 @@ html.js .reveal.is-in{ opacity: 1; transform: none; }
 .float-cta__copy{ display: flex; flex-direction: column; line-height: 1.12; text-align: left; }
 .float-cta__price{ font-weight: 500; font-size: .76rem; opacity: .9; }
 @media (min-width: 768px){
-  .float-cta{ left: auto; right: 24px; bottom: 24px; width: auto; padding: 1rem 1.5rem; }
+  /* sempre centralizado (nunca no canto) */
+  .float-cta{ left: 0; right: 0; bottom: 24px; width: fit-content; margin-inline: auto; padding: 1rem 1.5rem; }
 }
